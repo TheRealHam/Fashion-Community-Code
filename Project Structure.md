@@ -1,3 +1,34 @@
+# File System Structure
+
+The structure and purpose of each folder/file in the project are as follows:
+
+```
+FASHION-COMMUNITY-CODE/
+├── app/
+│   ├── db/                 # Database-related files
+│   ├── ml_service/         # Machine Learning service
+│   │   ├── model_param/    # Pre-trained model parameters
+│   │   │   └── model1.pth
+│   │   ├── model_service/  # Service logic for ML models(prediction, automatic update parameters, evaluation etc. )
+│   │   │   ├── base_service.py
+│   │   │   └── binary_service.py
+│   │   ├── models/         # ML models implementations
+│   │       ├── binary_classifier_model.py
+│   │       ├── label_extractor_model.py
+│   │       ├── recommendation_knn_model.py
+│   │       ├── recommendation_tfidf_model.py
+│   │       ├── style_classifier_model.py
+│   │       └── type_classifier_model.py
+├── static/                 # Static assets (CSS, JS, images, etc.)
+├── templates/              # HTML templates(save flask html resources)
+├── uploads/                # Uploaded files(Temporarly save the image upload by user)
+├── app.py                  # Main application file
+├── config.yaml             # Project configuration file (save DB etc. configuration)
+├── imagenet_classes.txt    # Class labels for ImageNet(Remove in the future)
+└── Project Structure.md    # Project structure documentation
+```
+
+
 # Models
 
 ### 1. Binary Classifier
